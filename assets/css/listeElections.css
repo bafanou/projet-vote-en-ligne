@@ -1,0 +1,99 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+.election-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.election-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.election-card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.btn-vote, .btn-results, .btn-logout {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn-vote {
+    background-color: #3498db;
+}
+
+.btn-vote:hover {
+    background-color: #2980b9;
+}
+
+.btn-results {
+    background-color: #2ecc71;
+}
+
+.btn-results:hover {
+    background-color: #27ae60;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+    margin-top: 30px;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+.countdown {
+    font-size: 1.1em;
+    color: #FF5722;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #FFE0B2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.countdown.closed {
+    color: #888;
+    background-color: #F0F0F0;
+    font-style: italic;
+}
